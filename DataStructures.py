@@ -19,31 +19,32 @@ def findFirstDuplicate(numlist):
 
 def mostFrequentNum(numlist):
     """Returns the most frequent number in the list
-    
+
     Arguments:
         numlist {list[integer]} -- input list of integers
-    
+
     Returns:
         integer -- most frequent number  
     """
     # dictionary operations
     numdict = {}
-    maxval = 0
-    maxkey = 0
+
     for num in numlist:
-        if not numdict.get(num):
-            numdict[num] = 1
-        else:
-            numdict[num] += 1
-        if numdict[num] > maxval:
-            maxval = numdict[num]
-            maxkey = num
+        numdict[num] = numdict.get(num, 0) + 1
+
+    maxval = None
+    maxkey = None
+    for k, v in numdict.items():
+        if maxkey is None or v > maxval:
+            maxkey = k
+            maxval = v
+
     return maxkey
 
 
 def listOperations(numlist):
     """Random list operations
-    
+
     Arguments:
         numlist {list[integer]} -- input list of integers
     """
@@ -62,13 +63,12 @@ def listOperations(numlist):
     print("highest 3 = {}".format(sortedList[-3:]))
 
 
-
 def min_max(numlist):
     """Returns the smallest and the largest number from a numeric list
-    
+
     Arguments:
         numlist {integer} -- input list of integers
-    
+
     Returns:
         (integer, integer) -- a tuple containing (min,max) numbers from the list
     """
