@@ -1,0 +1,48 @@
+Python Libraries
+
+csv (https://docs.python.org/3/library/csv.html) : very convenient for reading and writing csv files
+collections (https://docs.python.org/3/library/collections.html) : useful extensions of the usual data types including OrderedDict, defaultdict and namedtuple
+random (https://docs.python.org/3/library/random.html) : generates pseudo-random numbers, shuffles sequences randomly and chooses random items
+string (https://docs.python.org/3/library/string.html) : more functions on strings. This module also contains useful collections of letters like string.digits (a string containing all characters with are valid digits).
+re (https://docs.python.org/3/library/re.html) : pattern-matching in strings via regular expressions
+math (https://docs.python.org/3/library/math.html) : some standard mathematical functions
+os (https://docs.python.org/3/library/os.html) : interacting with operating systems
+os.path (https://docs.python.org/3/library/os.path.html) : submodule of os for manipulating path names
+sys (https://docs.python.org/3/library/sys.html) : work directly with the Python interpreter
+json (https://docs.python.org/3/library/json.html) : good for reading and writing json files (good for web work)
+
+Listing of most popular 3rd party python libraries: https://pypi.python.org/pypi/ranking
+
+interesting article on timezone conversion: http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time
+
+IPython (https://ipython.org/) - A better interactive Python interpreter
+requests (http://docs.python-requests.org/) - Provides easy to use methods to make web requests. Useful for accessing web APIs.
+Flask (http://flask.pocoo.org/) - a lightweight framework for making web applications and APIs.
+Django (https://www.djangoproject.com/) - A more featureful framework for making web applications. Django is particularly good for designing complex, content heavy, web applications.
+Beautiful Soup (https://www.crummy.com/software/BeautifulSoup/) - Used to parse HTML and extract information from it. Great for web scraping.
+pytest (http://doc.pytest.org/) - extends Python's builtin assertions and unittest module.
+PyYAML (http://pyyaml.org/wiki/PyYAML) - For reading and writing YAML files.
+NumPy (http://www.numpy.org/) - The fundamental package for scientific computing with Python. It contains among other things a powerful N-dimensional array object and useful linear algebra capabilities.
+pandas (http://pandas.pydata.org/) - A library containing high-performance, data structures and data analysis tools. In particular, pandas provides dataframes!
+matplotlib (http://matplotlib.org/) - a 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments.
+ggplot (http://ggplot.yhathq.com/) - Another 2D plotting library, based on R's ggplot2 library.
+Pillow (https://python-pillow.org/) - The Python Imaging Library adds image processing capabilities to your Python interpreter.
+pyglet (http://www.pyglet.org/) - A cross-platform application framework intended for game development.
+Pygame (http://www.pygame.org/) - A set of Python modules designed for writing games.
+pytz (http://pytz.sourceforge.net/) - World Timezone Definitions for Python
+
+Other documentation:
+Python tutorial: https://docs.python.org/3/tutorial/
+Python library reference: https://docs.python.org/3/index.html
+Third party documentation: https://readthedocs.org/
+Doug Hellman blog: https://doughellmann.com/blog/
+Eli Bendersky blog: http://eli.thegreenplace.net/
+
+
+Track dependencies for your program using requirements.txt
+beautifulsoup4==4.5.1
+bs4==0.0.1
+pytz==2016.7
+requests==2.11.1
+
+>> pip install -r requirements.txt
